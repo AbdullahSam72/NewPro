@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+input {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  display: flex;
+  width: 100%;
+}
+#cover {
+  width: 100%;
+  height: 700px;
+}
+
+.page-conatiner {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  perspective: 1500px;
+}
+.page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: 0.5s;
+  color: white;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.front {
+  background-color: blue;
+  box-sizing: border-box;
+  padding: 0 13px;
+}
+
+.back {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.next-btn {
+  position: absolute;
+  bottom: 13px;
+  right: 13px;
+  cursor: pointer;
+}
+.back-btn {
+  position: absolute;
+  bottom: 13px;
+  right: 13px;
+  cursor: pointer;
+}
+#p1 {
+  z-index: 3;
+}
+#p2 {
+  z-index: 2;
+}
+#p3 {
+  z-index: 1;
+}
+#c1:checked ~ .page-conatiner #p1 {
+  transform: rotateY(-180deg);
+  z-index: 1;
+}
+#c2:checked ~ .page-conatiner #p2 {
+  transform: rotateY(-180deg);
+  z-index: 2;
+}
+#c3:checked ~ .page-conatiner #p3 {
+  transform: rotateY(-180deg);
+  z-index: 3;
+}

@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Roboto:300,400,500,700");
+body {
+  background-image: url("/images/bgImages/bg_1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/*header*/
+
+header {
+  padding-left: 15%;
+  padding-right: 15%;
+  z-index: 60;
+  background-image: url("/images/bgImages/HeaderBg.jpg") no-repeat;
+}
+#myNavBar {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-optical-sizing: 30px;
+  font-style: italic;
+  color: black;
+}
+#myNavBar > .nav-link {
+  color: aliceblue;
+}
+#myNavBarContainer {
+  /*background-color: #bdaa80;*/
+  /* background-color: rgba(255, 255, 255, 0.8);*/
+  z-index: 2;
+}
+#LoginBookNow > li {
+  margin: 5px;
+  background-color: black;
+  border-radius: 10px;
+  border-color: black;
+}
+
+#navbarToggle {
+  background-color: white;
+}
+
+@media (max-width: 575.98px) {
+  #LoginBookNow {
+    display: none;
+  }
+}
+/*Header End*/
+
+/* MainBody*/
+#glMainBody {
+  height: 700px;
+  width: 100%;
+}
+.js .content {
+  top: 0px;
+}
+.scroller {
+  padding: 0px;
+}
+
+/*Footer*/
+footer {
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 131px;
+  background-color: black;
+}
+
+/*End Footer*/
+#bookNP {
+  width: 100%;
+}
+#bb-nav-prev {
+  top: 360px;
+  left: 5%;
+  position: absolute;
+  z-index: 200;
+  float: left;
+  width: 40px;
+  background: url("/images/Navigation/next.png");
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 12px;
+}
+#bb-nav-next {
+  position: absolute;
+  z-index: 200;
+  top: 360px;
+  right: 10px;
+  float: right;
+  clear: both;
+  width: 40px;
+  background: url("/images/Navigation/next.png");
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+}

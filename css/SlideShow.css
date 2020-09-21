@@ -1,0 +1,42 @@
+#MySlideSHowPage {
+  height: 700px;
+  width: 100%;
+  padding: 0px;
+}
+.glImageSS {
+  width: 100%;
+  height: 700px;
+  display: block;
+}
+.jspContainer {
+  height: 700px;
+}
+.myslidShowEffect > img {
+  -webkit-animation: thing 10s;
+  -o-animation: thing 10s;
+  animation: thing 10s;
+}
+@keyframes thing {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
+}
+.carousel-caption {
+  bottom: 270px;
+}
+.carousel-caption h5 {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+.carousel-caption p {
+  width: 75%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+  text-align: center;
+}
